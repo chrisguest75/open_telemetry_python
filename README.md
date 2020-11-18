@@ -2,8 +2,10 @@
 To install locally you can clone the repo
 
 ```sh
+pyenv install 3.8.0
+pyenv local 3.8.0
 export PIPENV_VENV_IN_PROJECT=1
-pipenv install --three
+pipenv install --python $(pyenv which python)
 pipenv shell
 ```
 
@@ -23,17 +25,18 @@ kind delete cluster --name otel
 Notes for how I started off the project
 
 ```sh
-pyenv install 3.9.0
-pyenv local 3.9.0
+pyenv install 3.8.0
+pyenv local 3.8.0
 export PIPENV_VENV_IN_PROJECT=1
-pipenv install --three
+pipenv install --python $(pyenv which python)
 git init
 ```
 
 
 ## Reosurces
 ### Open Telemetry
-https://opentelemetry-python.readthedocs.io/en/stable/  
+[open telemetry](https://opentelemetry-python.readthedocs.io/en/stable/)  
+[getting started](https://opentelemetry-python.readthedocs.io/en/stable/getting-started.html)
 
 ### Kind 
 https://kind.sigs.k8s.io/docs/user/quick-start/  
