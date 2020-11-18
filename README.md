@@ -5,7 +5,7 @@ To install locally you can clone the repo
 pyenv install 3.8.0
 pyenv local 3.8.0
 export PIPENV_VENV_IN_PROJECT=1
-pipenv install --python $(pyenv which python)
+pipenv install --pre --python $(pyenv which python)
 pipenv shell
 ```
 
@@ -28,7 +28,7 @@ Notes for how I started off the project
 pyenv install 3.8.0
 pyenv local 3.8.0
 export PIPENV_VENV_IN_PROJECT=1
-pipenv install --python $(pyenv which python)
+pipenv install --pre --python $(pyenv which python)
 git init
 ```
 
@@ -53,3 +53,8 @@ https://github.com/jaegertracing/helm-charts
 [pipenv](https://pypi.org/project/pipenv/)
 
 [connexion](https://connexion.readthedocs.io/en/latest/quickstart.html)
+
+
+### Troubleshooting
+Prerelease install of packages.
+https://towardsdatascience.com/common-errors-and-how-to-solve-them-why-wont-it-lock-8f5e57111f23
