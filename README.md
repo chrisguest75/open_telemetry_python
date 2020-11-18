@@ -23,6 +23,8 @@ kind delete cluster --name otel
 Notes for how I started off the project
 
 ```sh
+pyenv install 3.9.0
+pyenv local 3.9.0
 export PIPENV_VENV_IN_PROJECT=1
 pipenv install --three
 git init
@@ -32,9 +34,6 @@ git init
 ## Reosurces
 ### Open Telemetry
 https://opentelemetry-python.readthedocs.io/en/stable/  
-
-### Pipenv
-https://pypi.org/project/pipenv/  
 
 ### Kind 
 https://kind.sigs.k8s.io/docs/user/quick-start/  
@@ -46,3 +45,8 @@ https://helm.sh/docs/
 https://www.jaegertracing.io/  
 https://github.com/jaegertracing/helm-charts  
 
+### Python
+[pyenv](https://github.com/pyenv/pyenv)
+[pipenv](https://pypi.org/project/pipenv/)
+
+[connexion](https://connexion.readthedocs.io/en/latest/quickstart.html)
