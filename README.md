@@ -48,11 +48,25 @@ https://helm.sh/docs/
 https://www.jaegertracing.io/  
 https://github.com/jaegertracing/helm-charts  
 
+All in one.
+https://github.com/jaegertracing/jaeger/tree/master/examples/hotrod
+
+Run Jaegar
+```sh
+docker-compose -f ./jaegar/docker-compose.yaml up
+```
+
+
 ### Python
 [pyenv](https://github.com/pyenv/pyenv)
 [pipenv](https://pypi.org/project/pipenv/)
 
 [connexion](https://connexion.readthedocs.io/en/latest/quickstart.html)
+
+Tracing Tutorials
+https://github.com/yurishkuro/opentracing-tutorial
+
+
 
 
 ### Troubleshooting

@@ -7,6 +7,9 @@ name = "pypi"
 opentelemetry-api = "*"
 opentelemetry-sdk = "*"
 flask = "*"
+opentelemetry-instrumentation = "*"
+opentelemetry-instrumentation-flask = "*"
+opentelemetry-exporter-jaeger = "*"
 
 [dev-packages]
 
